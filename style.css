@@ -4,6 +4,7 @@
 }
 body{
     background-color: #A0CCF3;
+    
 }
 header{
     background-color: #614820;
@@ -13,6 +14,11 @@ header{
     font-size: 1.1rem;
     color: white;
     
+}
+#mainImage{
+    border: rgb(108, 98, 80) 0.7rem solid;
+    border-radius: 100%;
+    margin: 2rem;
 }
 
 /* Nav Displays and Footers */
@@ -34,11 +40,16 @@ header{
     font-weight: 300;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    border: hidden;
+    text-align: center;
+    text-decoration: none;
+    
+    border: 5px solid #e7b667;
     border-radius: 5rem;
 
     cursor: pointer;
+}
+.navButton:hover{
+    font-weight: 800;
 }
 #highlightButton{
     border: 5px rgb(255, 94, 94) solid;
@@ -72,12 +83,15 @@ footer{
     width: 10rem;
     border-radius: 5rem;
 }
+.floatClear{
+    clear: right;
+}
 
 /* Main Boxes */
 .leftBox{
     padding: 1.5rem;
     background-color: wheat;
-    margin: 3rem 3rem 3rem 3rem;
+    margin: 3rem 3rem 0rem 3rem;
     width: 70%;
     border: rgb(108, 98, 80) solid 7px;
     border-radius: 50px;
@@ -88,6 +102,21 @@ footer{
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.rightBox {
+    padding: 1.5rem;
+    background-color: wheat;
+    margin: 3rem 3rem 3rem 3rem;
+    width: 70%;
+    border: rgb(108, 98, 80) solid 7px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+}
 .leftImage{
     width: 10rem;
     justify-self: start;
@@ -95,4 +124,93 @@ footer{
 
     border-radius: 100px;
     border: 0.4rem rgb(108, 98, 80) solid;
+}
+.centerBox{
+    padding: 1.5rem;
+    background-color: wheat;
+    margin: 3rem auto 3rem auto;
+    width: 70%;
+    border: rgb(108, 98, 80) solid 7px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* For the boxes on the home page */
+.mainBox{
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem 5rem 1rem 5rem;
+}
+#languageBox{
+    display: flex;
+}
+#htmlBox{
+    background-color: rgb(0, 174, 255);
+    border: rgb(0, 107, 173) solid 10px;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    width: 30%;
+}
+#htmlBar{
+    margin: 1rem 0rem 0rem 0rem;
+    height: 2rem;
+    background-color: rgb(171, 171, 171);
+    border: rgb(7, 0, 66) solid 5px;
+}
+#htmlInnerBar{
+    background-color: blue;
+    width: 74%;
+    height: 100%;
+    margin: 0 0 0 -1px;
+}
+#cssBox {
+    background-color: rgb(0, 174, 255);
+    border: rgb(0, 107, 173) solid 10px;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    width: 30%;
+}
+#cssBar {
+    margin: 1rem 0rem 0rem 0rem;
+    height: 2rem;
+    background-color: rgb(171, 171, 171);
+    border: rgb(7, 0, 66) solid 5px;
+}
+#cssInnerBar {
+    background-color: blue;
+    width: 58%;
+    height: 100%;
+    margin: 0 0 0 -1px;
+}
+#jsBox {
+    background-color: rgb(0, 174, 255);
+    border: rgb(0, 107, 173) solid 10px;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    width: 30%;
+}
+#jsBar {
+    margin: 1rem 0rem 0rem 0rem;
+    height: 2rem;
+    background-color: rgb(171, 171, 171);
+    border: rgb(7, 0, 66) solid 5px;
+}
+#jsInnerBar {
+    background-color: blue;
+    width: 37%;
+    height: 100%;
+    margin: 0 0 0 -1px;
 }
