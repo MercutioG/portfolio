@@ -236,3 +236,42 @@ footer{
     height: 100%;
     margin: 0 0 0 -1px;
 }
+
+/* Mobile View */
+@media (max-width: 650px) {
+    /* Footer Adjustments */
+    footer {
+        flex-direction: column;
+    }
+    .footerBox>a, .footerBox>p {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    /* Header and Navbar Adjustments */
+    #navbar {
+        flex-wrap: wrap;
+    }
+    #highlightButton {
+        border: 0.4rem rgb(255, 94, 94) solid;
+        font-weight: 800;
+    }
+    .navButton {
+        background-color: #e7b667;
+        width: 15%;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        margin: 0.5rem;
+
+        font-size: 0.7rem;
+        font-weight: 300;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        text-decoration: none;
+
+        border: 0.4rem solid #e7b667;
+        border-radius: 5rem;
+
+        cursor: pointer;
+    }
+}
