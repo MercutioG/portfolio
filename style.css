@@ -20,6 +20,9 @@ header{
     border-radius: 100%;
     margin: 2rem;
 }
+.specialFont{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Nav Displays */
 #navbar{
@@ -141,7 +144,7 @@ footer{
 }
 .projectBox{
     width: 25rem;
-    height: 15rem;
+    height: auto;
     border-radius: 15px;
     background-color: wheat;
     margin: 1rem;
@@ -162,6 +165,23 @@ footer{
 
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.projectImg{
+    width: 100%;
+    border-radius: 1rem;
+}
+.projectIconContainer{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.projectIcon{
+    width: 3rem;
+    cursor: pointer;
+}
+.smallBoxSize{
+    height: 6rem;
+    text-align: center;
 }
 
 /* For the boxes on the home page */
@@ -237,7 +257,14 @@ footer{
     margin: 0 0 0 -1px;
 }
 
-/* Mobile View */
+/* Mobile View (Projects Description) */
+@media (max-width: 927px) {
+    .smallBoxSize{
+        height: auto;
+    }
+}
+
+/* Mobile View (Rest of Site) */
 @media (max-width: 650px) {
     /* Footer Adjustments */
     footer {
