@@ -264,6 +264,24 @@ footer{
     }
 }
 
+/* Mobile View (Home page language boxes) */
+@media (max-width: 1100px) {
+    #languageBox{
+        margin-left: 10%;
+        width: 100%;
+        flex-direction: column;
+    }
+    #htmlBox, #cssBox, #jsBox{
+        border: rgb(0, 107, 173) solid 5px;
+        border-radius: 20px;
+        margin: 0rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-weight: 600;
+        width: 70%;
+    }
+}
+
 /* Mobile View (Rest of Site) */
 @media (max-width: 650px) {
     /* Footer Adjustments */
@@ -291,14 +309,56 @@ footer{
 
         font-size: 0.7rem;
         font-weight: 300;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        text-decoration: none;
 
         border: 0.4rem solid #e7b667;
-        border-radius: 5rem;
+    }
 
-        cursor: pointer;
+    /* Home Page */
+    .centerBox{
+        border: rgb(108, 98, 80) solid 7px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 100%;
+    
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #mainImage{
+        width: 10rem;
+        border: rgb(108, 98, 80) 0.4rem solid;
+        border-radius: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+    .centerBox{
+        padding: 1rem;
+        background-color: wheat;
+        margin: 3rem auto 3rem auto;
+        width: 70%;
+        border: rgb(108, 98, 80) solid 5px;
+        flex-direction: column;
+    
+        font-size: 1rem;
+    }
+    /* About page */
+    .leftBox, .rightBox{
+        padding: 1rem;
+        width: 70%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: rgb(108, 98, 80) solid 4px;
+        border-radius: 50px;
+        flex-direction: column;
+        gap: 0;
+        float: none;
+        
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .leftImage{
+        width: 10rem;
+        height: auto;
     }
 }
