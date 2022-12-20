@@ -183,6 +183,15 @@ footer{
     height: 6rem;
     text-align: center;
 }
+#resume{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+#resume > img{
+    width: 50%;
+}
 
 /* For the boxes on the home page */
 .mainBox{
